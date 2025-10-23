@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+🚀 Stellar Minds – NASA Space Apps Challenge 2025 (Recriação)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a recriação do site desenvolvido pela equipe Stellar Minds durante o NASA Space Apps Challenge 2025
+.
 
-Currently, two official plugins are available:
+O projeto original foi construído utilizando a plataforma Lovable, durante o hackathon.
+Agora, o objetivo é refatorar e modernizar essa ideia, reimplementando tudo com Vite, React, TypeScript e Tailwind CSS para maior performance, flexibilidade e escalabilidade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Funcionalidades
 
-## React Compiler
+⚡ Desenvolvimento rápido com Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚛️ Interface baseada em componentes com React
 
-## Expanding the ESLint configuration
+🛡️ Tipagem estática para maior segurança com TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎨 Estilização utilitária e moderna com Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔧 Evolução do protótipo original em Lovable para um código aberto e escalável
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📦 Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Vite – ferramenta de build e servidor de desenvolvimento
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+React – biblioteca para construção de interfaces
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+TypeScript – JavaScript tipado
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tailwind CSS – framework CSS utilitário
+
+Lovable – plataforma utilizada na versão original durante o hackathon
+
+🛠️ Instalação & Setup
+
+Clone o repositório:
+
+git clone https://github.com/marqxmatheus/ExploradoresDoEspaco.git
+cd ExploradoresDoEspaco
+
+
+Instale as dependências:
+
+npm install
+
+
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+
+
+Build para produção:
+
+npm run build
+
+
+Pré-visualização do build:
+
+npm run preview
+
+📁 Estrutura do Projeto
+├── public/           # Arquivos estáticos
+├── src/
+│   ├── assets/       # Imagens, fontes, etc.
+│   ├── components/   # Componentes reutilizáveis do React
+│   ├── pages/        # Páginas principais
+│   ├── App.tsx       # Componente raiz
+│   └── main.tsx      # Ponto de entrada
+├── index.html        # Template HTML
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
